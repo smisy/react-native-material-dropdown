@@ -1,6 +1,6 @@
 {
-  "name": "react-native-material-dropdown",
-  "version": "0.11.1",
+  "name": "@smisy/react-native-material-dropdown",
+  "version": "0.11.5",
   "license": "BSD-3-Clause",
   "author": "Alexander Nazarov <n4kz@n4kz.com>",
 
@@ -16,12 +16,14 @@
     "spinner",
     "select"
   ],
-
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@smisy"
+  },
   "main": "index.js",
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/n4kz/react-native-material-dropdown.git"
+    "url": "git@github.com:smisy/react-native-material-dropdown.git"
   },
 
   "peerDependencies": {
@@ -43,6 +45,6 @@
     "prop-types": "^15.5.9",
     "react-native-material-buttons": "^0.5.0",
     "react-native-material-ripple": "^0.8.0",
-    "react-native-material-textfield": "git+https://github.com/noway/react-native-material-textfield.git#v0_12_0_with_0_62_fixes"
+    "@types/react-native-material-dropdown": "0.11.4"
   }
 }

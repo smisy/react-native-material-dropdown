@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, View } from 'react-native';
-import { TextField } from 'react-native-material-textfield';
+import { TextField } from '@smisy/react-native-material-textfield';
 import { Dropdown } from 'react-native-material-dropdown';
 
 export default function init() {
