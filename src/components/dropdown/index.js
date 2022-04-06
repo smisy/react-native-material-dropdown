@@ -519,6 +519,7 @@ export default class Dropdown extends PureComponent {
         editable={false}
         onChangeText={undefined}
         renderAccessory={renderAccessory}
+        renderRightAccessory={renderAccessory}
       />
     );
   }
