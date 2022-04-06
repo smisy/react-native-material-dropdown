@@ -352,7 +352,6 @@ export default class Dropdown extends PureComponent {
     let value = valueExtractor(data[index], index);
     let delay = Math.max(0, rippleDuration - animationDuration);
 
-    if ('function' === typeof onChangeText) {
     if ("function" === typeof onChangeText) {
       this.textFieldRef.current && this.textFieldRef.current.setValue(value);
       onChangeText(value, index, data);
