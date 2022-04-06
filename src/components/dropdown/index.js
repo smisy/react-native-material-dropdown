@@ -158,6 +158,8 @@ export default class Dropdown extends PureComponent {
   constructor(props) {
     super(props);
 
+    this.textFieldRef = React.createRef();
+
     this.onPress = this.onPress.bind(this);
     this.onClose = this.onClose.bind(this);
     this.onSelect = this.onSelect.bind(this);
@@ -351,6 +353,8 @@ export default class Dropdown extends PureComponent {
     let delay = Math.max(0, rippleDuration - animationDuration);
 
     if ('function' === typeof onChangeText) {
+    if ("function" === typeof onChangeText) {
+      this.textFieldRef.current && this.textFieldRef.current.setValue(value);
       onChangeText(value, index, data);
     }
 
@@ -508,6 +512,7 @@ export default class Dropdown extends PureComponent {
         label=''
         labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
 
+        ref={this.textFieldRef}
         {...props}
 
         value={title}
